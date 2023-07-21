@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .hide {
+        display: none;
+      }
+      #search {
+        outline: none;
+      }
+    </style>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body class="bg-dark-subtle">
+    <main class="w-75 mx-auto mt-4">
+      <section class="bg-primary-subtle p-3 shadow-sm rounded-1">
+        <form action="/index.html" method="post">
+          <label for="name" class="mb-2">product name</label>
+          <input
+            type="text"
+            id="name"
+            name="productname"
+            class="form-control"
+          />
+          <label for="price" class="my-2">product price</label>
+          <input
+            type="number"
+            id="price"
+            name="productprice"
+            class="form-control"
+          />
+          <label for="category" class="my-2">product category</label>
+          <input
+            type="text"
+            id="category"
+            name="productcategory"
+            class="form-control"
+          />
+          <label for="discription" class="my-2">product discription</label>
+          <input
+            type="text"
+            id="discription"
+            name="productdiscription"
+            class="form-control"
+          />
+
+          <button class="btn btn-primary w-100 mt-2" type="submit">
+            add product
+          </button>
+          <button class="btn btn-primary w-100 mt-2 hide update" type="submit">
+            update
+          </button>
+        </form>
+      </section>
+      <section class="mx-auto my-4 w-75 shadow-sm">
+        <input
+          type="text"
+          placeholder="search.."
+          id="search"
+          class="border-0 p-2 w-100 rounded-1"
+        />
+      </section>
+
+      <section class="shadow-sm">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>index</th>
+              <th>name</th>
+              <th>price</th>
+              <th>category</th>
+              <th>discription</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
